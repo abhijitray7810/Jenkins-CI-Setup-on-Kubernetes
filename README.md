@@ -19,7 +19,7 @@ This deployment creates:
 ## Architecture
 
 ```
-![image](https://github.com/abhijitray7810/Jenkins-CI-Setup-on-Kubernetes/blob/482dd2d69d40bef27af7ea52a9c4926a29a7521c/Architecture%20Image/Jenkins%20CI%20Setup%20on%20Kubernetes.png)
+![image](https://github.com/abhijitray7810/Jenkins-CI-Setup-on-Kubernetes/blob/213204105a1c0e4c90eac2b76c8fb6ddcbf4ee9c/Architecture.png)
 
 ```
 
