@@ -1,0 +1,45 @@
+---
+# 1. Create jenkins namespace
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: jenkins
+
+---
+# 2. Create Jenkins Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: jenkins-service
+  namespace: jenkins
+spec:
+  type: NodePort
+  selector:
+    app: jenkins
+  ports:
+    - port: 8080
+      targetPort: 8080
+      nodePort: 30008
+
+---
+# 3. Create Jenkins Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jenkins-deployment
+  namespace: jenkins
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jenkins
+  template:
+    metadata:
+      labels:
+        app: jenkins
+    spec:
+      containers:
+      - name: jenkins-container
+        image: jenkins/jenkins
+        ports:
+        - containerPort: 8080
