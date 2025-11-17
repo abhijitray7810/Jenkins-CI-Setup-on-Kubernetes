@@ -5,7 +5,7 @@ This guide provides instructions for deploying Jenkins CI server on a Kubernetes
 
 ## Overview
 
-This deployment creates:
+This deployment creates: 
 - A dedicated `jenkins` namespace
 - A Jenkins deployment with 1 replica
 - A NodePort service exposing Jenkins on port 30008
