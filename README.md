@@ -13,7 +13,7 @@ This deployment creates:
 ## Prerequisites
 
 - Kubernetes cluster up and running
-- `kubectl` configured to communicate with the cluster
+- `kubectl` configured to communicate with the cluster 
 - Sufficient cluster resources (minimum 2GB RAM recommended for Jenkins)
 
 ## Architecture
